@@ -16,7 +16,7 @@ public class WordList
     {
         String word = (String) myList.get(i);
         
-        if(word.length() == length)
+        if(word.length() == len)
             balls++;
     }
 
