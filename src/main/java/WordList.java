@@ -10,11 +10,17 @@ public class WordList
 
   public int numWordsOfLength(int len)
   {
-    int sum = 0;
-    for(int i =0; i<myList.size(); i++)
-        if(myList.get(i).length()==len)
-            sum++;
-    return sum;
+    int balls = 0;
+
+    for(int i = 0; i < myList.size(); i++)
+    {
+        String word = (String) myList.get(i);
+        
+        if(word.length() == length)
+            balls++;
+    }
+
+    return balls;
   }
 
   public void removeWordsOfLength(int len)
@@ -25,4 +31,5 @@ public class WordList
           i--;
     }
   }
+}
 }
